@@ -1,0 +1,155 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, address, em, img, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td, i, b, s {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: Helvetica,Arial,sans-serif;
+}
+img{
+	max-width:60%;
+	margin: 7% 20% 0 20%;
+}
+.q-title {
+    position: relative;
+    padding: 15px 15px 10px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    background: #fff;
+    font-weight: bolder;
+}
+body {
+    word-wrap: break-word;
+}
+.q-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #e1e1df;
+    margin: 0 15px;
+}
+.q-content {
+    font-size: 15px;
+    color: #333;
+    line-height: 24px;
+    padding: 10px 15px 0 15px;
+    background: #fff;
+    text-align: justify;
+}
+.praise {
+    position: relative;
+    padding: 30px 0 20px 0;
+    background: #fff;
+    text-align: center;
+}
+.praise .result a:before, .praise .reason a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.praise .result a {
+    display: inline-block;
+    position: relative;
+    line-height: 24px;
+    margin: 0 10px;
+    padding: 3px 15px;
+    -webkit-tap-highlight-color: transparent;
+}
+.praise a {
+    color: #919191;
+}
+.praise a:before {
+    border: 1px solid #919191;
+}
+.praise i.icon-like{
+    background-image: url(../image/icon-like.png);
+    background-size: 22px 22px;
+}
+.praise .result i {
+    display: inline-block;
+    vertical-align: top;
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+.praise .result i.icon-repost {
+    background-image: url(../image/icon-repost.png);
+    background-size: 22px 22px;
+    margin-top: 1px;
+}
+.praise .wx a.current {
+    color: #039702;
+}
+.praise .wx a.current:before {
+    border: 1px solid #039702;
+}
+.praise .wx a.current i.icon-like {
+    background-image: url(../image/icon-wx-like-select.png);
+    background-size: 22px 22px;
+}
+.praise .wx a.current i.icon-repost {
+    background-image: url(../image/icon-wx-repost-select.png);
+    background-size: 22px 22px;
+    margin-top: 1px;
+}
+.praise .reason p {
+    margin: 10px 0 5px 0;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+
+.praise .reason p span {
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    background: #fff;
+    padding: 0 20px;
+    color: #b3b3b3;
+    z-index: 9;
+}
+.praise .reason p:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: scaleY(0.5);
+    -webkit-transform-origin: 0 0;
+    border-bottom: 1px solid #d5d5d5;
+    top: 50%;
+    margin: -15px 15px 0 15px;
+    z-index: 0;
+}
+.praise .reason .xx {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 10px;
+}
+.praise .reason .xx a {
+    flex: 1;
+    position: relative;
+    padding: 6px 0;
+    margin: 0 5px;
+    font-size: 12px;
+    float: left;
+}
+.praise a {
+    color: #919191;
+}
+.praise .wx a.current {
+    color: #039702;
+}
