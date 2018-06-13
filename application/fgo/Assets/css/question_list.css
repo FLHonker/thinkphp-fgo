@@ -206,7 +206,7 @@ a {
 .icon-feed {
     width: 19px;
     height: 19px;
-    background-image: url(image/icon-feed.png);
+    background-img: url(img/icon-feed.png);
     background-size: 19px 19px;
 }
 .btn-feed a{

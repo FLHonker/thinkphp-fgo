@@ -8,14 +8,14 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <!-- Your app title -->
-    <title>掌上理工大反馈</title>
+    <title>fgo攻略</title>
     <!-- Path to Framework7 iOS CSS theme styles-->
-    <link rel="stylesheet" href="Framework7-1.5.3/dist/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="../../Assets/Framework7-1.5.3/dist/css/framework7.ios.min.css">
     <!-- Path to Framework7 iOS related color styles -->
-    <link rel="stylesheet" href="Framework7-1.5.3/dist/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="../../Assets/Framework7-1.5.3/dist/css/framework7.ios.colors.min.css">
     <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="Framework7-1.5.3/dist/css/my-app.css">
-    <link rel="stylesheet" href="css/feedback_css.css">
+    <link rel="stylesheet" href="../../Assets/Framework7-1.5.3/dist/css/my-app.css">
+    <link rel="stylesheet" href="../../Assets/css/feedback_css.css">
     <style type="text/css">
         .searchbar {
             background-color: rgb(0, 164, 224);
@@ -56,59 +56,71 @@
              
                 <div class="list-block search-here searchbar-found" id="default">
                     <!--搜索框下的内容-->
-                    <div class="mod-qlist"style="margin-top: 0px;margin-bottom: 0px;padding-top: 15px;background: url(image/bg-index@2x.png);-webkit-background-size:cover ;background-size: cover;">
-                        <h3 class="list-title2">热点问题</h3>
-                      <div class="label-box lbox-close nobg m-line-15" id="questionList">
-                      <script type="text/html" id="questionListTemplate">
-                        {{#each data}}
-                            <a class="label-item p-l-15 external" href="content.html?id={{id}}">
-                                <div class="label-inner">
-                                    <div class="item-arrow access-box m-r-15"></div>
-                                    <div class="item-content">{{title}}</div>
-                                </div>
-                            </a>
-                        {{/each}}
-                       </script>
-                       </div>
+                    <div class="mod-qlist"style="margin-top: 0px;margin-bottom: 0px;">
+                        <h3 style="background-color: rgb(0, 164, 224);padding-top: 15px;"class="list-title2">近期活动</h3>
+                       <div class="swiper-container">
+	<div class="swiper-container swiper-init" data-speed="400">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><span><a href="https://fgowiki.com/archives/14326"><img src="../../Assets/img/top_banner-2.png"></a></span></div>
+	  <div class="swiper-slide"><span><a href="https://fgowiki.com/archives/14326"><img src="../../Assets/img/gudagudaorder.png"></a></span></div>
+	  <div class="swiper-slide"><span><a href="https://fgowiki.com/archives/14326"><img src="../../Assets/img/top_banner.png"></a></span></div> 
+	</div>
+	 <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+                      
                     </div>
                       <div class="mod-qlist">
-                    <h3 class="list-title3" style="color: #000;margin-top: 10px">问题分类</h3>
+                    <h3 class="list-title3" style="color: #000;margin-top: 10px">攻略分类</h3>
                     </div>
-                 <div class="label-box lbox-close" style="height: 220px;">
+                 <div class="label-box lbox-close" style="height: 280px;">
                     <div class="mod-img-qlist">
                         <a class="label-imgbox external" href="question_list.html?question_type=1">
                             <div class="qimg-box">
-                                <div class="icon1"><img src="image/4.png"></div>
-                                <h3>登录</h3></div>
+                                <div class="icon1"><img src="../../Assets/img/4.png"></div>
+                                <h3>战斗</h3></div>
                         </a>
                         <a class="label-imgbox external" href="question_list.html?question_type=2">
                             <div class="qimg-box">
-                                <div class="icon1"><img src="image/3.png"></div>
-                                <h3>图书馆</h3></div>
+                                <div class="icon1"><img src="../../Assets/img/3.png"></div>
+                                <h3>编成</h3></div>
                         </a>
                         <a class="label-imgbox external" href="question_list.html?question_type=3">
                             <div class="qimg-box">
-                                <div class="icon1"><img src="image/6.png"></div>
-                                <h3>成绩</h3></div>
+                                <div class="icon1"><img src="../../Assets/img/6.png"></div>
+                                <h3>强化</h3></div>
                         </a>
                         <a class="label-imgbox external" href="question_list.html?question_type=4">
                             <div class="qimg-box">
-                                <div class="icon"><img src="image/1.png"></div>
-                                <h3>校园卡</h3></div>
+                                <div class="icon"><img src="../../Assets/img/1.png"></div>
+                                <h3>商店</h3></div>
                         </a>
                         <a class="label-imgbox external" href="question_list.html?question_type=5">
                             <div class="qimg-box">
-                                <div class="icon"><img src="image/2.png"></div>
-                                <h3>更多功能</h3></div>
+                                <div class="icon"><img src="../../Assets/img/2.png"></div>
+                                <h3>房间</h3></div>
                         </a>
                         <a class="label-imgbox external" href="question_list.html?question_type=6">
                             <div class="qimg-box">
-                                <div class="icon"><img src="image/5.png"></div>
-                                <h3>其它</h3></div>
+                                <div class="icon"><img src="../../Assets/img/5.png"></div>
+                                <h3>英灵</h3></div>
+                        </a>
+						<a class="label-imgbox external" href="question_list.html?question_type=6">
+                            <div class="qimg-box">
+                                <div class="icon"><img src="../../Assets/img/5.png"></div>
+                                <h3>Master</h3></div>
+                        </a>
+						<a class="label-imgbox external" href="question_list.html?question_type=6">
+                            <div class="qimg-box">
+                                <div class="icon"><img src="../../Assets/img/5.png"></div>
+                                <h3>机制</h3></div>
+                        </a>
+						<a class="label-imgbox external" href="question_list.html?question_type=6">
+                            <div class="qimg-box">
+                                <div class="icon"><img src="../../Assets/img/5.png"></div>
+                                <h3>周回本</h3></div>
                         </a>
                     </div>
-                </div>
-                <div class="btn-feed"><a href="#"><i class="icon-feed"></i>意见反馈</a>
                 </div>
             </div>
                 </div>
@@ -118,10 +130,10 @@
 </div>
 
 <!-- Path to Framework7 Library JS-->
-<script type="text/javascript" src="Framework7-1.5.3/dist/js/framework7.min.js"></script>
+<script type="text/javascript" src="../../Assets/Framework7-1.5.3/dist/js/framework7.min.js"></script>
 <!-- Path to your app js-->
-<script type="text/javascript" src="Framework7-1.5.3/dist/js/my-app.js"></script>
-<script type="text/javascript" src="jquery/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="../../Assets/Framework7-1.5.3/dist/js/my-app.js"></script>
+<script type="text/javascript" src="../../Assets/js/jquery-1.11.0.js"></script>
 <script type="text/javascript">
     $$.getJSON("http://api.iwut.wutnews.net/question/getpage?order=1&user_type=1", function (result) {
         if(result.data.length == 0) return;
@@ -130,7 +142,18 @@
         $$('#questionList').html(Template7.compile(questionTemplate)(result));
 		
     });
-    
+var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        autoplay : 2000,
+		 autoplayDisableOnInteraction:false,
+        // 如果需要滚动条
+        centeredSlides: true,
+    })
     $(function(){  
   	var findTemplate;
     $('#searchvalue').bind('change', function() {  

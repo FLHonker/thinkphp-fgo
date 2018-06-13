@@ -72,7 +72,7 @@ body {
     border: 1px solid #919191;
 }
 .praise i.icon-like{
-    background-image: url(../image/icon-like.png);
+    background-image: url(../img/icon-like.png);
     background-size: 22px 22px;
 }
 .praise .result i {
@@ -83,7 +83,7 @@ body {
     margin-right: 5px;
 }
 .praise .result i.icon-repost {
-    background-image: url(../image/icon-repost.png);
+    background-image: url(../img/icon-repost.png);
     background-size: 22px 22px;
     margin-top: 1px;
 }
@@ -94,11 +94,11 @@ body {
     border: 1px solid #039702;
 }
 .praise .wx a.current i.icon-like {
-    background-image: url(../image/icon-wx-like-select.png);
+    background-image: url(../img/icon-wx-like-select.png);
     background-size: 22px 22px;
 }
 .praise .wx a.current i.icon-repost {
-    background-image: url(../image/icon-wx-repost-select.png);
+    background-image: url(../img/icon-wx-repost-select.png);
     background-size: 22px 22px;
     margin-top: 1px;
 }
