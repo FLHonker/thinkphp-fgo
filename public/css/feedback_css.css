@@ -187,12 +187,12 @@ img {
 }
 .swiper-button-prev {
     width: 40px;
-    background: url(../../Assets/img/left_btn.png) no-repeat;
+    background: url(../img/left_btn.png) no-repeat;
     background-size: contain;
 }
 .swiper-button-next {
     width: 40px;
-    background: url(../../Assets/img/right_btn.png) no-repeat;
+    background: url(../img/right_btn.png) no-repeat;
     background-size: contain;
 }
 .mod-img-qlist .qimg-box {
