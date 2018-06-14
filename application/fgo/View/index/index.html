@@ -61,9 +61,9 @@
                        <div class="swiper-container">
 	<div class="swiper-container swiper-init" data-speed="400">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><span><a href="https://fgowiki.com/archives/14326"><img src="../../../../public/img/top_banner-2.png"></a></span></div>
-	  <div class="swiper-slide"><span><a href="https://fgowiki.com/archives/14326"><img src="../../../../public/img/gudagudaorder.png"></a></span></div>
-	  <div class="swiper-slide"><span><a href="https://fgowiki.com/archives/14326"><img src="../../../../public/img/top_banner.png"></a></span></div> 
+      <div class="swiper-slide"><span><a href="#"><img src="../../../../public/img/top_banner-2.png"></a></span></div>
+	  <div class="swiper-slide"><span><a href="#"><img src="../../../../public/img/gudagudaorder.png"></a></span></div>
+	  <div class="swiper-slide"><span><a href="#"><img src="../../../../public/img/top_banner.png"></a></span></div> 
 	</div>
 	 <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
@@ -135,7 +135,9 @@
 <script type="text/javascript" src="../../../../public/Framework7-1.5.3/dist/js/my-app.js"></script>
 <script type="text/javascript" src="../../../../public/js/jquery-1.11.0.js"></script>
 <script type="text/javascript">
-    $$.getJSON("http://api.iwut.wutnews.net/question/getpage?order=1&user_type=1", function (result) {
+      var api_url = "http://118.89.151.58/api/";
+       // var api_url = "http://api.iwut.wutnews.net/question/";
+    $$.getJSON(api_url + "getpage?order=1&user_type=1", function (result) {
         if(result.data.length == 0) return;
         result.data.slice(0,6);
         var questionTemplate = $$('#questionListTemplate').html();
@@ -161,11 +163,13 @@ var mySwiper = new Swiper ('.swiper-container', {
     var inputVal = $.trim(obj.value);
     $.ajax({
                 type:"GET",
-                url:"http://api.iwut.wutnews.net/question/select?keyword="+inputVal,              
+                url:api_url + "select?keyword="+inputVal,              
                 data: {
                     "inputVal":inputVal,
                 },
+                dataType: "json",
                 success:function(result){
+                    console.log(result);
                 		if(result.length == 0) {
                 			return 0;
                 		}

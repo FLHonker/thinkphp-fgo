@@ -24,7 +24,7 @@
     <div class="view view-main">
         <div class="detail-box" id="cont">
         <script type="text/html" id="contTemplate">
-            {{#with data[0]}}
+            {{#with data}}
             <h2 class="q-title">{{title}}</h2>
             <div class="q-content">
                 <div>
@@ -58,10 +58,11 @@
     <script type="text/javascript" src="../../../../public/Framework7-1.5.3/dist/js/my-app.js"></script>
     <script type="text/javascript" src="../../../../public/js/jquery-1.11.0.js"></script>
     <script type="text/javascript">
+        var api_url = "http://118.89.151.58/api/";
         var id = 0;
         var url = window.location.search;
         id = url.substring(url.lastIndexOf('=')+1, url.length);
-        $$.getJSON("http://api.iwut.wutnews.net/question/getcontent?id="+id, function (result) {
+        $$.getJSON(api_url + "getcontent?id="+id, function (result) {
 
             if(result.data.length == 0) return;
 
@@ -75,7 +76,7 @@
         document.getElementById("feedback_b_z").style.display = 'block';
         $.ajax({
                 type:"GET",
-                url:"http://api.iwut.wutnews.net/question/like?id=2&like=1",                
+                url:api_url + "like?id=2&like=1",                
                 data: {
                     "like":1,
                     "id":id
@@ -93,7 +94,7 @@ function des(x){
         $$("#des").addClass("current");
         $.ajax({
                 type:"GET",
-                url:"http://api.iwut.wutnews.net/question/like?id=2&dislike=1",
+                url:api_url + "like?id=2&dislike=1",
                  
                 data: {
                     "dislike":1,
@@ -105,7 +106,7 @@ function des(x){
         $$("#ope").addClass("current");
         $.ajax({
                 type:"GET",
-                url:"http://api.iwut.wutnews.net/question/like?id=2&dislike=1",
+                url:api_url + "like?id=2&dislike=1",
                  
                 data: {
                     "dislike":2,
@@ -117,7 +118,7 @@ function des(x){
         $$("#rul").addClass("current");
         $.ajax({
                 type:"GET",
-                url:"http://api.iwut.wutnews.net/question/like?id=2&dislike=1",
+                url:api_url + "like?id=2&dislike=1",
                  
                 data: {
                     "dislike":3,
@@ -129,7 +130,7 @@ function des(x){
         $$("#fun").addClass("current");
         $.ajax({
                 type:"GET",
-                url:"http://api.iwut.wutnews.net/question/like?id=2&dislike=1",
+                url:api_url + "like?id=2&dislike=1",
                  
                 data: {
                     "dislike":4,

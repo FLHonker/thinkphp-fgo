@@ -54,9 +54,10 @@
     <!-- Path to your app js-->
     <script type="text/javascript" src="../../../../public/Framework7-1.5.3/dist/js/my-app.js"></script>
     <script type="text/javascript">
+        var api_url = "http://118.89.151.58/api/";
         var url = window.location.search;
         var loc = url.substring(url.lastIndexOf('=')+1, url.length);
-        $$.getJSON("http://api.iwut.wutnews.net/question/getpage?user_type=1&question_type="+loc, function (result) {
+        $$.getJSON(api_url + "getpage?user_type=1&question_type="+loc, function (result) {
 
             if(result.data.length == 0) return;
 
